@@ -1,6 +1,9 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('/images/evil-cat2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 /* Wrapping element */
@@ -32,4 +35,15 @@ body {
     .carousel-caption {
         display: none;
     }
+}
+H1 {
+    text-align: center;
+    color: white;
+    font-size: 80px;
+}
+
+H2 {
+    text-align: center;
+    color: red;
+    font-size: 60px;
 }
