@@ -2,11 +2,21 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Evil Cat Says";
+    var says = new List<string>()
+    {
+        "PAAS is the Future",
+        "Is it done yet?",
+        "Get on with it",
+        "I hate cats",
+        "Whose idea was this"
+    };
+
+    ViewData["Selected"] = says[new Random().Next(0, says.Count - 1)];
 }
 
 <div class="row">
    <h1>Evil Cat Says</h1>   
 </div>
 <div class="row">
-    <h2>PAAS is the future</h2>   
+    <h2>@Html.ViewData["Selected"]</h2>   
 </div>
